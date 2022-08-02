@@ -1,20 +1,26 @@
-# react-native-bonfire
-Cute and Hot React Native UI Toolkit
+# React Native Bonfire 🔥
+
+[![npm version](https://img.shields.io/badge/npm%20package-0.1.0-blue)](https://www.npmjs.com/package/react-native-bonfire) [![npm version](https://img.shields.io/badge/size-24%20kB-yellow)](https://www.npmjs.com/package/react-native-bonfire)
+
+Cute and Hot React Native UI Library 🔥
+
+![react native fade loading demo example](https://raw.githubusercontent.com/hasretozkan/react-native-bonfire/master/example.png)
+
 ## Installation
 
 ```sh
-npm install react-native-bonfire
+npm install --save react-native-bonfire
 ```
 
-## Usage
+or
 
-```js
-import { multiply } from "react-native-bonfire";
-
-// ...
-
-const result = await multiply(3, 7);
+```sh
+yarn add react-native-bonfire
 ```
+
+## Documantation
+
+[View the full docs here](CONTRIBUTING.md)
 
 ## Contributing
 
@@ -23,7 +29,3 @@ See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the 
 ## License
 
 MIT
-
----
-
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
