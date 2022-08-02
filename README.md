@@ -1,6 +1,6 @@
 # React Native Bonfire 🔥
 
-[![npm version](https://img.shields.io/badge/npm%20package-0.1.0-blue)](https://www.npmjs.com/package/react-native-bonfire) [![npm version](https://img.shields.io/badge/size-24%20kB-yellow)](https://www.npmjs.com/package/react-native-bonfire)
+[![npm version](https://img.shields.io/badge/npm%20package-0.1.1-blue)](https://www.npmjs.com/package/react-native-bonfire) [![npm version](https://img.shields.io/badge/size-24%20kB-yellow)](https://www.npmjs.com/package/react-native-bonfire)
 
 Cute and Hot React Native UI Library 🔥
 
@@ -20,7 +20,7 @@ yarn add react-native-bonfire
 
 ## Documantation
 
-[View the full docs here](CONTRIBUTING.md)
+[View the full docs here](https://hasret-oezkan.gitbook.io/react-native-bonfire/)
 
 ## Contributing
 
