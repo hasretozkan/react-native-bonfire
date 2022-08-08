@@ -83,9 +83,10 @@ export const Button: React.FunctionComponent<ButtonProps> = ({
   if (text) {
     return (
       <TouchableOpacity
-        {...rest}
         onPress={() => onPress()}
         style={[defaultStyle[type], style]}
+        activeOpacity={0.9}
+        {...rest}
       >
         <Text style={[textStyle]} type={textType}>
           {text}

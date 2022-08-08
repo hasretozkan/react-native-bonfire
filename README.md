@@ -1,8 +1,19 @@
-# React Native Bonfire 🔥
+<h1 align="center">
+  React Native Bonfire 🔥
+</h1>
 
-[![npm version](https://img.shields.io/badge/npm%20package-0.1.5-blue)](https://www.npmjs.com/package/react-native-bonfire) [![npm version](https://img.shields.io/badge/size-24%20kB-yellow)](https://www.npmjs.com/package/react-native-bonfire)
+<p align="center">
+  <img height="20" src="https://img.shields.io/badge/npm%20package-0.1.6-blue" alt="NPM Version">
+   <img height="20" src="https://img.shields.io/badge/size-50.2%20kB-yellow" alt="Size">
+   <img height="20" src="https://img.shields.io/badge/Weekly Downlaod-1K-red" alt="Weekly Download">
+</p>
 
-Cute and Hot React Native UI Library 🔥
+<p align="center">
+  <img width="160" src="https://raw.githubusercontent.com/hasretozkan/react-native-bonfire/master/bonfire.gif" alt="React Native Bonfire">
+</p>
+<h5 align="center">
+    Cute and Hot React Native UI Library 🔥
+</h5>
 
 ## Demo Image
 

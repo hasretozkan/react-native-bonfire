@@ -12,12 +12,16 @@ export interface CardProps {
 
   /** Card color mode */
   mode: 'light' | 'dark';
+
+  /** Card shadow */
+  shadow?: boolean;
 }
 
 export const Card: React.FunctionComponent<CardProps> = ({
   style = {},
   children,
   border = 'none',
+  shadow = false,
   mode = 'light',
   ...rest
 }) => {
@@ -26,6 +30,21 @@ export const Card: React.FunctionComponent<CardProps> = ({
     borderColor: 'lightgray',
     backgroundColor: mode === 'light' ? 'white' : '#4c4c4c',
   };
+
+  if (shadow) {
+    extraStyle = {
+      ...extraStyle,
+      shadowColor: '#000',
+      shadowOffset: {
+        width: 0,
+        height: 2,
+      },
+      shadowOpacity: 0.25,
+      shadowRadius: 3.84,
+
+      elevation: 5,
+    };
+  }
 
   if (border === 'rounded') {
     extraStyle = {

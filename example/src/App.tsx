@@ -58,7 +58,7 @@ export default function App() {
           <Button text="error" type="error" style={styles.button} />
           <Button text="warning" type="warning" style={styles.button} />
           <Divider marginY={20} color="lightgray" />
-          <Card style={styles.card} mode="light" border="rounded">
+          <Card style={styles.card} mode="light" shadow border="rounded">
             <Text type="h1">Test Card</Text>
           </Card>
         </View>
@@ -90,5 +90,6 @@ const styles = StyleSheet.create({
     padding: 10,
     alignItems: 'center',
     width: '90%',
+    marginBottom: 10,
   },
 });
