@@ -7,7 +7,7 @@ import {
   View,
   Dimensions,
 } from 'react-native';
-import { Text, Divider, Button } from 'react-native-bonfire';
+import { Text, Divider, Button, Card } from 'react-native-bonfire';
 
 export default function App() {
   return (
@@ -57,6 +57,10 @@ export default function App() {
           <Button text="info" type="info" style={styles.button} />
           <Button text="error" type="error" style={styles.button} />
           <Button text="warning" type="warning" style={styles.button} />
+          <Divider marginY={20} color="lightgray" />
+          <Card style={styles.card} mode="light" border="rounded">
+            <Text type="h1">Test Card</Text>
+          </Card>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -81,5 +85,10 @@ const styles = StyleSheet.create({
   button: {
     width: '90%',
     marginVertical: 5,
+  },
+  card: {
+    padding: 10,
+    alignItems: 'center',
+    width: '90%',
   },
 });
