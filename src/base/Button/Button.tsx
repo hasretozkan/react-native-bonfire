@@ -26,6 +26,9 @@ export interface ButtonProps {
 
   /** Text font size type */
   textType?: 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5';
+
+  /** Button border radius type */
+  border?: 'none' | 'rounded' | 'full';
 }
 
 /** Text displays words and characters of various sizes.*/
@@ -39,52 +42,61 @@ export const Button: React.FunctionComponent<ButtonProps> = ({
     color: 'white',
     fontWeight: 'bold',
   },
+  border,
   textType = 'p',
   ...rest
 }) => {
+  let extraStyle: ViewStyle = {};
   const defaultStyle: any = {
     default: {
       padding: 10,
       backgroundColor: constants.PRIMARY,
-      borderRadius: 4,
       alignItems: 'center',
       justifyContent: 'center',
     },
     success: {
       padding: 10,
       backgroundColor: constants.SUCCESS,
-      borderRadius: 4,
       alignItems: 'center',
       justifyContent: 'center',
     },
     info: {
       padding: 10,
       backgroundColor: constants.INFO,
-      borderRadius: 4,
       alignItems: 'center',
       justifyContent: 'center',
     },
     error: {
       padding: 10,
       backgroundColor: constants.ERROR,
-      borderRadius: 4,
       alignItems: 'center',
       justifyContent: 'center',
     },
     warning: {
       padding: 10,
       backgroundColor: constants.WARNING,
-      borderRadius: 4,
       alignItems: 'center',
       justifyContent: 'center',
     },
   };
 
+  if (border === 'rounded') {
+    extraStyle = {
+      ...extraStyle,
+      borderRadius: 4,
+    };
+  } else if (border === 'full') {
+    extraStyle = {
+      ...extraStyle,
+      borderRadius: 9999,
+    };
+  }
+
   if (text) {
     return (
       <TouchableOpacity
         onPress={() => onPress()}
-        style={[defaultStyle[type], style]}
+        style={[extraStyle, defaultStyle[type], style]}
         activeOpacity={0.9}
         {...rest}
       >

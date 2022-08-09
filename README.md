@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <img height="20" src="https://img.shields.io/badge/npm%20package-0.1.6-blue" alt="NPM Version">
+  <img height="20" src="https://img.shields.io/badge/npm%20package-0.1.7-blue" alt="NPM Version">
    <img height="20" src="https://img.shields.io/badge/size-50.2%20kB-yellow" alt="Size">
    <img height="20" src="https://img.shields.io/badge/Weekly Downlaod-1K-red" alt="Weekly Download">
 </p>

@@ -13,6 +13,12 @@ export interface TextProps extends TextProperties {
 
   /** Type of Text. */
   type?: 'p' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5';
+
+  /** Weight of Text. */
+  weight?: 'normal' | 'bold';
+
+  /** Color of Text */
+  color?: string;
 }
 
 /** Text displays words and characters of various sizes.
@@ -21,6 +27,8 @@ export const Text: React.FunctionComponent<TextProps> = ({
   style = {},
   type = 'p',
   children = '',
+  weight = 'normal',
+  color = '#000',
   ...rest
 }) => {
   const defaultStyle: any = {
@@ -47,7 +55,11 @@ export const Text: React.FunctionComponent<TextProps> = ({
   return (
     <NativeText
       accessibilityRole="text"
-      style={StyleSheet.flatten([defaultStyle[type], style])}
+      style={StyleSheet.flatten([
+        defaultStyle[type],
+        { fontWeight: weight, color },
+        style,
+      ])}
       {...rest}
     >
       {children}

@@ -2,8 +2,6 @@ import React from 'react';
 import { View, ViewStyle } from 'react-native';
 
 export interface CardProps {
-  /**  Add additional styling for Card. */
-
   /** Card style */
   style?: ViewStyle;
 
@@ -15,6 +13,12 @@ export interface CardProps {
 
   /** Card shadow */
   shadow?: boolean;
+
+  /** Card margin */
+  margin?: number;
+
+  /** Card padding */
+  padding?: number;
 }
 
 export const Card: React.FunctionComponent<CardProps> = ({
@@ -23,11 +27,15 @@ export const Card: React.FunctionComponent<CardProps> = ({
   border = 'none',
   shadow = false,
   mode = 'light',
+  margin = 0,
+  padding = 0,
   ...rest
 }) => {
   let extraStyle: ViewStyle = {
     borderWidth: 1,
     borderColor: 'lightgray',
+    margin,
+    padding,
     backgroundColor: mode === 'light' ? 'white' : '#4c4c4c',
   };
 
@@ -41,7 +49,6 @@ export const Card: React.FunctionComponent<CardProps> = ({
       },
       shadowOpacity: 0.25,
       shadowRadius: 3.84,
-
       elevation: 5,
     };
   }

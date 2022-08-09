@@ -2,8 +2,6 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
 export interface DividerProps {
-  /**  Add additional styling for Divider. */
-
   /** Divider width. Can be px or %. */
   width?: string;
 

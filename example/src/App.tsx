@@ -25,10 +25,10 @@ export default function App() {
           <Text type="h1" style={styles.text}>
             Header 1
           </Text>
-          <Text type="h2" style={styles.text}>
+          <Text type="h2" style={styles.text} weight="bold">
             Header 2
           </Text>
-          <Text type="h3" style={styles.text}>
+          <Text type="h3" style={styles.text} color="red">
             Header 3
           </Text>
           <Text type="h4" style={styles.text}>
@@ -52,8 +52,18 @@ export default function App() {
           <Text type="h5" style={[styles.text, styles.boldText]}>
             Button Component 🔥
           </Text>
-          <Button text="default" type="default" style={styles.button} />
-          <Button text="success" type="success" style={styles.button} />
+          <Button
+            text="default"
+            type="default"
+            border="full"
+            style={styles.button}
+          />
+          <Button
+            text="success"
+            type="success"
+            border="rounded"
+            style={styles.button}
+          />
           <Button text="info" type="info" style={styles.button} />
           <Button text="error" type="error" style={styles.button} />
           <Button text="warning" type="warning" style={styles.button} />
